@@ -8,9 +8,9 @@ Group:		Libraries
 Source0:	ftp://ftp.unixodbc.org/pub/unixODBC/%{name}-%{version}.tar.gz
 # Source0-md5:	bd25d261ca1808c947cb687e2034be81
 URL:		http://www.unixodbc.org/
-BuildRequires:	flex
-BuildRequires:	libltdl-devel >= 2:2
-BuildRequires:	readline-devel >= 4.2
+#BuildRequires:	flex
+#BuildRequires:	libltdl-devel >= 2:2
+#BuildRequires:	readline-devel >= 4.2
 BuildConflicts:	kdesupport-odbc
 Requires(post):	/sbin/ldconfig
 %ifarch %{x8664} ia64 ppc64 sparc64 s390x
@@ -37,7 +37,7 @@ Summary:	unixODBC header files and development documentation
 Summary(pl.UTF-8):	Pliki nagłówkowe i dokunentacja do unixODBC
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	libltdl-devel
+#Requires:	libltdl-devel
 Obsoletes:	libunixODBC2-devel
 
 %description devel
